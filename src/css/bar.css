@@ -19,7 +19,7 @@ html {
 }
 
 #barLogoBox {
-    background: url("../svg/CLquadrato.svg");
+    background: url("../assets/svg/CLquadrato.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
