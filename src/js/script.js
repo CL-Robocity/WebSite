@@ -1,4 +1,4 @@
-import { barElms } from "./assets/js/data.js"
+import { barElms } from "./data.js"
 
 const bar = document.getElementById("bar")
 
