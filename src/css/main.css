@@ -97,6 +97,6 @@ body {
 }
 
 .test {
-    border: 1px solid #000;
+    border: 1px solid #f00;
     box-sizing: border-box;
 }

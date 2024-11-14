@@ -5,7 +5,6 @@ const bar = document.getElementById("bar")
 barElms.forEach((e) => {
     let elm = document.createElement("div")
     elm.classList.add("barElm")
-    elm.classList.add("test")
 
     let svg = document.createElement("div")
     svg.classList.add("barSvg")
