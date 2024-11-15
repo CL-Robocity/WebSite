@@ -11,5 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "path": "^0.12.7",
+    "url": "^0.11.4"
   }
 }
