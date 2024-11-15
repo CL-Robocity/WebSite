@@ -1,21 +1,13 @@
-html {
-    --pageW: 1100px;
-    --pageTs: 18px;
-
-    --col1: #3dc1dc;
-    --col2: #fa7605;
-}
-
 #bar {
     width: 100%;
     height: 100%;
 
-    padding: 0 calc((100vw - var(--pageW) * .75) / 2);
+    padding: 0 calc((100vw - var(--pageW) * .6) / 2);
     box-sizing: border-box;
 
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: .5fr repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
 }
 
 #barLogoBox {
@@ -50,11 +42,14 @@ html {
 
 .barTxt {
     color: #fff;
-    font-family: "Kanit";
+    font-family: "carbon";
     font-size: var(--pageTs);
 
-    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    box-sizing: border-box;
 
+    cursor: pointer;
     transition: all .2s ease-in;
 
     justify-self: center;
@@ -79,7 +74,6 @@ html {
 
 .barElm:hover > .barTxt {
     transform: scale(1.1);
-    margin-bottom: 0px;
 }
 
 .barElm:hover > .barSvg {

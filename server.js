@@ -11,52 +11,28 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html")
 })
 
-app.get("/src/css/main.css", (req, res) => {
-    res.sendFile(__dirname + "/src/css/main.css")
-})
+let dirs = [
+    "/src/css/main.css",
+    "/src/css/bar.css",
+    "/src/css/pag1.css",
+    "/src/js/script.js",
+    "/src/js/data.js",
+    "/src/font/POICarbonicTrial-Medium.otf",
+    "/src/assets/img/pezzi.png",
+    "/src/assets/svg/CLquadrato.svg",
+    "/src/assets/svg/CLlungo.svg",
+    "/src/assets/svg/home.svg",
+    "/src/assets/svg/team.svg",
+    "/src/assets/svg/robot.svg",
+    "/src/assets/svg/project.svg",
+    "/src/assets/svg/sponsor.svg",
+    "/src/assets/svg/contacts.svg",
+]
 
-app.get("/src/css/bar.css", (req, res) => {
-    res.sendFile(__dirname + "/src/css/bar.css")
-})
-
-app.get("/src/js/script.js", (req, res) => {
-    res.sendFile(__dirname + "/src/js/script.js")
-})
-
-app.get("/src/js/data.js", (req, res) => {
-    res.sendFile(__dirname + "/src/js/data.js")
-})
-
-app.get("/src/assets/img/pezzi.png", (req, res) => {
-    res.sendFile(__dirname + "/src/assets/img/pezzi.png")
-})
-
-app.get("/src/assets/svg/CLquadrato.svg", (req, res) => {
-    res.sendFile(__dirname + "/src/assets/svg/CLquadrato.svg")
-})
-
-app.get("/src/assets/svg/CLlungo.svg", (req, res) => {
-    res.sendFile(__dirname + "/src/assets/svg/CLlungo.svg")
-})
-
-app.get("/src/assets/svg/home.svg", (req, res) => {
-    res.sendFile(__dirname + "/src/assets/svg/home.svg")
-})
-
-app.get("/src/assets/svg/team.svg", (req, res) => {
-    res.sendFile(__dirname + "/src/assets/svg/team.svg")
-})
-
-app.get("/src/assets/svg/robot.svg", (req, res) => {
-    res.sendFile(__dirname + "/src/assets/svg/robot.svg")
-})
-
-app.get("/src/assets/svg/sponsor.svg", (req, res) => {
-    res.sendFile(__dirname + "/src/assets/svg/sponsor.svg")
-})
-
-app.get("/src/assets/svg/contacts.svg", (req, res) => {
-    res.sendFile(__dirname + "/src/assets/svg/contacts.svg")
+dirs.forEach((dir) => {
+    app.get(dir, (req, res) => {
+        res.sendFile(__dirname + dir)
+    })
 })
 
 app.listen(8080, () => {

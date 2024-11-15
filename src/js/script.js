@@ -20,6 +20,7 @@ barElms.forEach((e) => {
     if (e.n == document.body.classList[0]) {
         console.log(e.n, line)
         line.style.width = "40%"
+        txt.style.transform = "scale(1.1) "
         svg.style.opacity = "100%"
         svg.style.transform = "translateY(0)"
     }
@@ -28,5 +29,12 @@ barElms.forEach((e) => {
     elm.appendChild(txt)
     elm.appendChild(line)
     bar.appendChild(elm)
+
+    if (e.n == "Robot") {
+        bar.innerHTML += '<div id="barLogoBox"></div>'
+    }
 })
 
+document.getElementById("titleButton").addEventListener("click", () => {
+    document.getElementById("pag2").scrollIntoView({behavior: "smooth"})
+})
