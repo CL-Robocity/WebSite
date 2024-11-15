@@ -11,51 +11,51 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html")
 })
 
-app.get("/src/css", (req, res) => {
+app.get("/src/css/main.css", (req, res) => {
     res.sendFile(__dirname + "/src/css/main.css")
 })
 
-app.get("/src/css", (req, res) => {
+app.get("/src/css/bar.css", (req, res) => {
     res.sendFile(__dirname + "/src/css/bar.css")
 })
 
-app.get("/src/js", (req, res) => {
+app.get("/src/js/script.js", (req, res) => {
     res.sendFile(__dirname + "/src/js/script.js")
 })
 
-app.get("/src/js", (req, res) => {
+app.get("/src/js/data.js", (req, res) => {
     res.sendFile(__dirname + "/src/js/data.js")
 })
 
-app.get("/src/assets/img", (req, res) => {
+app.get("/src/assets/img/pezzi.png", (req, res) => {
     res.sendFile(__dirname + "/src/assets/img/pezzi.png")
 })
 
-app.get("/src/assets/svg", (req, res) => {
+app.get("/src/assets/svg/CLquadrato.svg", (req, res) => {
     res.sendFile(__dirname + "/src/assets/svg/CLquadrato.svg")
 })
 
-app.get("/src/assets/svg", (req, res) => {
+app.get("/src/assets/svg/CLlungo.svg", (req, res) => {
     res.sendFile(__dirname + "/src/assets/svg/CLlungo.svg")
 })
 
-app.get("/src/assets/svg", (req, res) => {
+app.get("/src/assets/svg/home.svg", (req, res) => {
     res.sendFile(__dirname + "/src/assets/svg/home.svg")
 })
 
-app.get("/src/assets/svg", (req, res) => {
+app.get("/src/assets/svg/team.svg", (req, res) => {
     res.sendFile(__dirname + "/src/assets/svg/team.svg")
 })
 
-app.get("/src/assets/svg", (req, res) => {
+app.get("/src/assets/svg/robot.svg", (req, res) => {
     res.sendFile(__dirname + "/src/assets/svg/robot.svg")
 })
 
-app.get("/src/assets/svg", (req, res) => {
+app.get("/src/assets/svg/sponsor.svg", (req, res) => {
     res.sendFile(__dirname + "/src/assets/svg/sponsor.svg")
 })
 
-app.get("/src/assets/svg", (req, res) => {
+app.get("/src/assets/svg/contacts.svg", (req, res) => {
     res.sendFile(__dirname + "/src/assets/svg/contacts.svg")
 })
 
