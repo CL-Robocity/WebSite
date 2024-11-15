@@ -56,7 +56,7 @@ app.get("/src/assets/svg", (req, res) => {
 })
 
 app.get("/src/assets/svg", (req, res) => {
-    res.sendFile(__dirname + "/src/assets/svg/contact.svg")
+    res.sendFile(__dirname + "/src/assets/svg/contacts.svg")
 })
 
 app.listen(8080, () => {
