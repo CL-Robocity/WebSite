@@ -17,7 +17,7 @@ let dirs = [
     "/src/css/pag1.css",
     "/src/js/script.js",
     "/src/js/data.js",
-    "/src/font/POICarbonicTrial-Medium.otf",
+    "/src/assets/font/POICarbonicTrial-Medium.otf",
     "/src/assets/img/pezzi.png",
     "/src/assets/svg/CLquadrato.svg",
     "/src/assets/svg/CLlungo.svg",
