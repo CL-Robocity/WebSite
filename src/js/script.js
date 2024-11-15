@@ -18,7 +18,6 @@ barElms.forEach((e) => {
     line.classList.add("barLine")
 
     if (e.n == document.body.classList[0]) {
-        console.log(e.n, line)
         line.style.width = "40%"
         txt.style.transform = "scale(1.1) "
         svg.style.opacity = "100%"
