@@ -1,1 +1,1 @@
-export let barElms = [{n: "Home", l: "./"}, {n: "Team", l: "./"}, {n: "Robot", l: "./"}, {n: "Project", l:"./"}, {n: "Sponsor", l: "./"}, {n: "Contacts", l: "./"}]
+export let barElms = [{n: "Home", l: "./"}, {n: "Team", l: "./"}, {n: "Robot", l: "./"}, {n: "Project", l:"./"}, {n: "Sponsors", l: "./"}, {n: "Contacts", l: "./"}]

@@ -24,15 +24,6 @@ body {
     min-height: 100%;
 
     margin: 20px 0 100px 0;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px calc(100vh - 80px) 150vh 40vh;
-}
-
-.page {
-    padding: 0 calc((100vw - var(--pageW)) / 2);
-    box-sizing: border-box;
 }
 
 div {

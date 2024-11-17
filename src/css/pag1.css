@@ -1,9 +1,23 @@
 #pag1 {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 20px);
     background: #000;
+
+    display: grid;
+    grid-template-columns: 1fr var(--pageW) 1fr;
+    grid-template-rows: 60px 1fr;
+
+    background: url(../assets/img/bot.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-#pag2 {
-    background: #434343;
+#lang {
+    height: 100%;
+    aspect-ratio: 1;
+    justify-self: end;
 }
 
 #title {
@@ -16,6 +30,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 8fr 2fr;
+
+    grid-column: 2;
+    grid-row: 2;
 }
 
 #titleText {
@@ -35,7 +52,7 @@
     font-style: bold;
     margin-bottom: 20px;
 
-    background: radial-gradient(circle farthest-side at center center, var(--col1) 0%, var(--col2) 100%);
+    background: linear-gradient(to right, var(--col1) 0%, var(--col2) 100%);
     background-clip: text;
 
     display: flex;
@@ -49,7 +66,7 @@
     font-family: "carbon", serif;
     font-style: bold;
 
-    background: radial-gradient(circle farthest-side at center center, var(--col1) 0%, var(--col2) 100%);
+    background: linear-gradient(to right, var(--col1) 0%, var(--col2) 100%);
     background-clip: text;
 
     padding: 5px 0;
@@ -63,7 +80,7 @@
     font-family: "carbon", serif;
     font-style: bold;
 
-    background: radial-gradient(circle farthest-side at center center, var(--col1) 0%, var(--col2) 100%);
+    background: linear-gradient(to right, var(--col1) 0%, var(--col2) 100%);/*radial-gradient(circle farthest-side at center center, var(--col1) 0%, var(--col2) 100%); */
     background-clip: text;
 
     padding: 5px 0;

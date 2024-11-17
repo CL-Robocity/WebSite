@@ -15,18 +15,22 @@ let dirs = [
     "/src/css/main.css",
     "/src/css/bar.css",
     "/src/css/pag1.css",
+    "/src/css/pag2.css",
     "/src/js/script.js",
     "/src/js/data.js",
     "/src/assets/font/POICarbonicTrial-Medium.otf",
     "/src/assets/img/pezzi.png",
+    "/src/assets/img/bot.png",
     "/src/assets/svg/CLquadrato.svg",
     "/src/assets/svg/CLlungo.svg",
     "/src/assets/svg/home.svg",
     "/src/assets/svg/team.svg",
     "/src/assets/svg/robot.svg",
     "/src/assets/svg/project.svg",
-    "/src/assets/svg/sponsor.svg",
+    "/src/assets/svg/sponsors.svg",
     "/src/assets/svg/contacts.svg",
+    "/src/assets/svg/ita.svg",
+    "/src/assets/svg/usa.svg",
 ]
 
 dirs.forEach((dir) => {

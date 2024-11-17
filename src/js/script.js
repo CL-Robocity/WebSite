@@ -1,6 +1,6 @@
 import { barElms } from "./data.js"
 
-const bar = document.getElementById("bar")
+const barMain = document.getElementById("barMain")
 
 barElms.forEach((e) => {
     let elm = document.createElement("div")
@@ -27,10 +27,10 @@ barElms.forEach((e) => {
     elm.appendChild(svg)
     elm.appendChild(txt)
     elm.appendChild(line)
-    bar.appendChild(elm)
+    barMain.appendChild(elm)
 
     if (e.n == "Robot") {
-        bar.innerHTML += '<div id="barLogoBox"></div>'
+        barMain.innerHTML += '<div id="barLogoBox"></div>'
     }
 })
 
