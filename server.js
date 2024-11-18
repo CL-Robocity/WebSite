@@ -15,6 +15,7 @@ let dirs = [
     "/src/css/main.css",
     "/src/css/bar.css",
     "/src/css/pag1.css",
+    "/src/css/pag1_m.css",
     "/src/css/pag2.css",
     "/src/js/script.js",
     "/src/js/data.js",

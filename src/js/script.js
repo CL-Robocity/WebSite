@@ -1,5 +1,9 @@
 import { barElms } from "./data.js"
 
+const params = new URLSearchParams(window.location.search)
+params.set("l", "en")
+history.pushState(null, "", "/lang?l=en")
+
 const barMain = document.getElementById("barMain")
 
 barElms.forEach((e) => {
@@ -36,4 +40,17 @@ barElms.forEach((e) => {
 
 document.getElementById("titleButton").addEventListener("click", () => {
     document.getElementById("pag2").scrollIntoView({behavior: "smooth"})
+})
+
+document.getElementById("lang").addEventListener("click", (e) => {
+    let l = params.get("l")
+    if (l == "en") {
+        params.set("l", "it")
+        document.getElementById("langBox").style.transform = "translateY(-54px)"
+        history.pushState(null, '', '/lang?l=it')
+    } else {
+        params.set("l", "en")
+        document.getElementById("langBox").style.transform = "translateY(0px)"
+        history.pushState(null, '', '/lang?l=en')
+    }
 })

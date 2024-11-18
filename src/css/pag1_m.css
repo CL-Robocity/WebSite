@@ -1,0 +1,66 @@
+@media only screen and (max-width: 1219px) {
+    #app {
+        margin: 0 0 100px 0;
+    }
+
+    #pag1 {
+        grid-template-rows: var(--mobileBarH) 1fr 60px;
+        grid-template-columns: 1fr 60px;
+        background-size: cover;
+    }
+
+    #bar {
+        grid-column: 2 span;
+        grid-template-columns: 1fr;
+    }
+
+    #barMain {
+        width: calc(100vw * var(--mobilebarW));
+        grid-template-columns: .7fr repeat(6, 1fr);
+        justify-self: center;
+        grid-column: 1;
+    }
+
+    #barLogoBox {
+        grid-column: 1;
+        grid-row: 1;
+        background-position: bottom center;
+    }
+
+    .barTxt {
+        font-size: var(--mobileTs);
+        padding-top: 5px;
+    }
+
+    .barSvg {
+        margin-top: 10px;
+    }
+
+    .barLine {
+        width: 10%;
+    }
+
+    .barElm:hover > .barLine {
+        width: 60%;
+    }
+
+    #title {
+        grid-column: 2 span;
+    }
+
+    #titleText {
+        width: 100vw;
+    }
+
+    #titleTop {
+        font-size: 10vw;
+    }
+
+    #titleMain {
+        font-size: 15vw;
+    }
+
+    #titleBottom {
+        font-size: 5vw;
+    }
+}
