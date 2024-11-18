@@ -47,10 +47,10 @@ document.getElementById("lang").addEventListener("click", (e) => {
     if (l == "en") {
         params.set("l", "it")
         document.getElementById("langBox").style.transform = "translateY(-54px)"
-        history.pushState(null, '', '/lang?l=it')
+        history.pushState(null, '', '/?l=it')
     } else {
         params.set("l", "en")
         document.getElementById("langBox").style.transform = "translateY(0px)"
-        history.pushState(null, '', '/lang?l=en')
+        history.pushState(null, '', '/?l=en')
     }
 })
