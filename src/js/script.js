@@ -2,7 +2,7 @@ import { barElms } from "./data.js"
 
 const params = new URLSearchParams(window.location.search)
 params.set("l", "en")
-history.pushState(null, "", "/lang?l=en")
+history.pushState(null, "", "/?l=en")
 
 const barMain = document.getElementById("barMain")
 
