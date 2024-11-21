@@ -1,1 +1,2 @@
+/* Coded by F. Aiello CL-Robocity All Rigths Reserved */
 export let barElms = [{n: "Home", l: "./"}, {n: "Team", l: "./"}, {n: "Robot", l: "./"}, {n: "Project", l:"./"}, {n: "Sponsors", l: "./"}, {n: "Contacts", l: "./"}]

@@ -1,3 +1,4 @@
+// Coded by F. Aiello CL-Robocity All Rigths Reserved
 import { barElms } from "./data.js"
 
 const params = new URLSearchParams(window.location.search)
@@ -5,6 +6,17 @@ params.set("l", "en")
 history.pushState(null, "", "/?l=en")
 
 const barMain = document.getElementById("barMain")
+
+let mobileB = window.innerWidth < 1100, navB = 0
+
+window.addEventListener("resize", () => {
+    mobileB = window.innerWidth < 1100
+    nav(navB, 0)
+
+    if (!mobileB) {
+        nav(1, 1)
+    }
+})
 
 barElms.forEach((e) => {
     let elm = document.createElement("div")
@@ -22,10 +34,9 @@ barElms.forEach((e) => {
     line.classList.add("barLine")
 
     if (e.n == document.body.classList[0]) {
-        line.style.width = "40%"
-        txt.style.transform = "scale(1.1) "
-        svg.style.opacity = "100%"
-        svg.style.transform = "translateY(0)"
+        line.classList.add("checked")
+        txt.classList.add("checked")
+        svg.classList.add("checked")
     }
 
     elm.appendChild(svg)
@@ -54,3 +65,27 @@ document.getElementById("lang").addEventListener("click", (e) => {
         history.pushState(null, '', '/?l=en')
     }
 })
+
+let bars = document.querySelectorAll(".navBar")
+document.getElementById("nav").addEventListener("click", () => {
+    navB = !navB
+    nav(navB, 0)
+})
+
+function nav(b, n) {
+    if(b) {
+        barMain.style.transform = "unset"
+        if (!n) document.body.style.overflowY = "hidden"
+        bars.forEach((e) => {
+            e.classList.add("checked")
+            e.style.marginLeft = "0px"
+        })
+    } else {
+        barMain.style.transform = "translateY(-100vh)"
+        document.body.style.overflowY = "scroll"
+        bars.forEach((e) => {
+            e.classList.remove("checked")
+            e.style.marginLeft = "0"
+        })
+    }
+}

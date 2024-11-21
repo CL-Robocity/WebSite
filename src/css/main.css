@@ -1,11 +1,11 @@
+/* Coded by F. Aiello CL-Robocity All Rigths Reserved */
 html {
     --pageW: 1100px;
     --barW: .65;
     --pageTs: 18px;
 
     --mobileBarH: 60px;
-    --mobilebarW: .95;
-    --mobileTs: 12px;
+    --mobileTs: 30px;
 
     --col1: #3dc1dc;
     --col2: #fa7605;

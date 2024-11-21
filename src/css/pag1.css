@@ -1,3 +1,4 @@
+/* Coded by F. Aiello CL-Robocity All Rigths Reserved */
 #pag1 {
     position: relative;
     width: 100%;
@@ -68,6 +69,11 @@
     transition: .2s ease-in all;
 }
 
+.barSvg.checked {
+    opacity: 100%;
+    transform: unset;
+}
+
 .barTxt {
     color: #fff;
     font-family: "carbon";
@@ -84,6 +90,10 @@
     align-self: center;
 }
 
+.barTxt.checked {
+    transform: scale(1.1);
+}
+
 .barLine {
     width: 5%;
     height: 100%;
@@ -94,6 +104,10 @@
     transition: all .2s ease-in;
 
     background-color: #fff;
+}
+
+.barLine.checked {
+    width: 40%;
 }
 
 .barElm:hover > .barLine {

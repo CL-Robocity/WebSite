@@ -1,47 +1,127 @@
+/* Coded by F. Aiello CL-Robocity All Rigths Reserved */
 @media only screen and (max-width: 1219px) {
-    #app {
-        margin: 0 0 100px 0;
-    }
 
     #pag1 {
-        grid-template-rows: var(--mobileBarH) 1fr 60px;
+        grid-template-rows: var(--mobileBarH) 1fr;
         grid-template-columns: 1fr 60px;
         background-size: cover;
     }
 
     #bar {
-        grid-column: 2 span;
+        grid-column: 1;
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        overflow: hidden;
+    }
+
+    #nav {
+        height: var(--mobileBarH);
+        aspect-ratio: 1;
+
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-around;
+
+        padding: 10px;
+        box-sizing: border-box;
+
+        transition: all .2s linear;
+        z-index: 3;
+
+        overflow: hidden;
+    }
+
+    #lang {
+        z-index: 3;
+    }
+    
+    .flagTxt {
+        height: 60px;
+        align-items: center;
+    }
+
+    .navBar {
+        width: 100%;
+        height: 10%;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: all .2s linear;
+    }
+    
+    #b1.checked {
+        transform: translateY(334%) rotate(45deg);
+        transform-origin: center;
+    }
+
+    #b2.checked {
+       transform: translateX(-200%);
+    }
+
+    #b3.checked {
+        transform: translateY(-334%) rotate(-45deg);
+        transform-origin: center;
     }
 
     #barMain {
-        width: calc(100vw * var(--mobilebarW));
-        grid-template-columns: .7fr repeat(6, 1fr);
-        justify-self: center;
-        grid-column: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        top: 0px;
+        left: 0px;
+        grid-column: unset;
+        z-index: 2;
+
+        background: #000000cc;
+
+        transform: translateY(-100vh);
+        transition: .2s all ease-out;
+
+        padding: var(--mobileBarH) 0 200px 0;
+        grid-template-rows: 2fr repeat(6, 1fr);
+        grid-template-columns: 1fr;
     }
 
     #barLogoBox {
-        grid-column: 1;
         grid-row: 1;
-        background-position: bottom center;
+        background: url("../assets/svg/CLlungo.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 2vh;
+    }
+
+    .barElm {
+        width: max-content;
+        height: max-content;
+        justify-self: center;
+        grid-template-columns: 40px max-content;
+        grid-template-rows: auto 5px;
+        column-gap: 2vw;
+        row-gap: 5px;
     }
 
     .barTxt {
         font-size: var(--mobileTs);
-        padding-top: 5px;
+        padding-bottom: 0;
     }
 
     .barSvg {
-        margin-top: 10px;
+        opacity: 100%;
+        transform: translateY(0);
     }
 
     .barLine {
-        width: 10%;
+        grid-column: 2 span;
+        width: 30px;
+    }
+
+    .barLine.checked {
+        width: 60px;
     }
 
     .barElm:hover > .barLine {
-        width: 60%;
+        width: 60px;
     }
 
     #title {
