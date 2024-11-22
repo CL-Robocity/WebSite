@@ -2,7 +2,7 @@
 @media only screen and (max-width: 1219px) {
 
     #pag1 {
-        grid-template-rows: var(--mobileBarH) 1fr;
+        grid-template-rows: minmax(var(--mobileBarH), 60px) 1fr;
         grid-template-columns: 1fr 60px;
         background-size: cover;
     }
@@ -16,6 +16,7 @@
 
     #nav {
         height: var(--mobileBarH);
+        max-height: 60px;
         aspect-ratio: 1;
 
         display: flex !important;
@@ -32,6 +33,7 @@
     }
 
     #lang {
+        max-height: 60px;
         z-index: 3;
     }
     
@@ -77,9 +79,15 @@
         transform: translateY(-100vh);
         transition: .2s all ease-out;
 
-        padding: var(--mobileBarH) 0 200px 0;
+        padding: var(--mobileBarH) 0 15vh 0;
         grid-template-rows: 2fr repeat(6, 1fr);
         grid-template-columns: 1fr;
+    }
+
+    @media only screen and (min-width: 600px) {
+        #barMain {
+            padding-top: 0;
+        }
     }
 
     #barLogoBox {
@@ -97,7 +105,7 @@
         justify-self: center;
         grid-template-columns: 40px max-content;
         grid-template-rows: auto 5px;
-        column-gap: 2vw;
+        column-gap: 8px;
         row-gap: 5px;
     }
 

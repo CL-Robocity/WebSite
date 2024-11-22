@@ -188,7 +188,7 @@
     font-style: bold;
     margin-bottom: 20px;
 
-    background: linear-gradient(to right, var(--col1) 0%, var(--col2) 100%);
+    background: linear-gradient(to right, var(--col1) 30%, var(--col2) 70%);
     background-clip: text;
 
     display: flex;
@@ -202,7 +202,7 @@
     font-family: "carbon", serif;
     font-style: bold;
 
-    background: linear-gradient(to right, var(--col1) 0%, var(--col2) 100%);
+    background: linear-gradient(to right, var(--col1) 30%, var(--col2) 70%);
     background-clip: text;
 
     padding: 5px 0;
@@ -216,7 +216,7 @@
     font-family: "carbon", serif;
     font-style: bold;
 
-    background: linear-gradient(to right, var(--col1) 0%, var(--col2) 100%);
+    background: linear-gradient(to right, var(--col1) 30%, var(--col2) 70%);
     background-clip: text;
 
     padding: 5px 0;

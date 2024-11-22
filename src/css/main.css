@@ -4,7 +4,7 @@ html {
     --barW: .65;
     --pageTs: 18px;
 
-    --mobileBarH: 60px;
+    --mobileBarH: 8vh;
     --mobileTs: 30px;
 
     --col1: #3dc1dc;

@@ -11,7 +11,7 @@ let mobileB = window.innerWidth < 1100, navB = 0
 
 window.addEventListener("resize", () => {
     mobileB = window.innerWidth < 1100
-    nav(navB, 0)
+    //nav(navB, 0)
 
     if (!mobileB) {
         nav(1, 1)
