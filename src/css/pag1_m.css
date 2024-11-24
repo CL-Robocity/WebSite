@@ -1,7 +1,12 @@
 /* Coded by F. Aiello CL-Robocity All Rigths Reserved */
 @media only screen and (max-width: 1219px) {
 
+    #app {
+        margin-top: 0;
+    }
+
     #pag1 {
+        padding-top: 20px;
         grid-template-rows: minmax(var(--mobileBarH), 60px) 1fr;
         grid-template-columns: 1fr 60px;
         background-size: cover;
@@ -84,12 +89,6 @@
         grid-template-columns: 1fr;
     }
 
-    @media only screen and (min-width: 600px) {
-        #barMain {
-            padding-top: 0;
-        }
-    }
-
     #barLogoBox {
         grid-row: 1;
         background: url("../assets/svg/CLlungo.svg");
@@ -150,5 +149,23 @@
 
     #titleBottom {
         font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1219px) {
+    #barMain {
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1219px) and (max-height: 550px) {
+
+    #app {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #dimAlert {
+        display: flex;
     }
 }

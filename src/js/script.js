@@ -7,12 +7,11 @@ history.pushState(null, "", "/?l=en")
 
 const barMain = document.getElementById("barMain")
 
-let mobileB = window.innerWidth < 1100, navB = 0
+let mobileB = window.innerWidth < 1219, navB = 0
 
 window.addEventListener("resize", () => {
-    mobileB = window.innerWidth < 1100
-    //nav(navB, 0)
-
+    mobileB = window.innerWidth < 1219
+    nav(navB, 0)
     if (!mobileB) {
         nav(1, 1)
     }
