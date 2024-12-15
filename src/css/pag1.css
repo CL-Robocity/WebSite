@@ -2,7 +2,7 @@
 #pag1 {
     position: relative;
     width: 100%;
-    height: calc(100vh - 20px);
+    height: 100vh;
     background: #000;
 
     display: grid;
@@ -13,6 +13,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    padding-top: 20px;
 }
 
 #bar {
@@ -103,7 +105,7 @@
 
     transition: all .2s ease-in;
 
-    background-color: #fff;
+    background: #fff;
 }
 
 .barLine.checked {

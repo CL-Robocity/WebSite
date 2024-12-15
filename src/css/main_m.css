@@ -1,0 +1,6 @@
+/* Coded by F. Aiello CL-Robocity All Rigths Reserved */
+@media only screen and (max-width: 1219px) {
+    #scrollBar {
+        display: none;
+    }
+}

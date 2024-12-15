@@ -5,9 +5,15 @@ const params = new URLSearchParams(window.location.search)
 params.set("l", "en")
 history.pushState(null, "", "/?l=en")
 
-const barMain = document.getElementById("barMain")
+//document.getElementById("pag2").scrollIntoView({behavior: "smooth"})
 
-let mobileB = window.innerWidth < 1219, navB = 0
+const barMain = document.getElementById("barMain")
+const appBox = document.getElementById("appBox")
+const app = document.getElementById("app")
+const sbBox = document.getElementById("sbBox")
+const scrollBar = document.getElementById("scrollBar")
+
+let mobileB = window.innerWidth < 1219, navB = 0, pressed = 0
 
 window.addEventListener("resize", () => {
     mobileB = window.innerWidth < 1219
@@ -88,3 +94,24 @@ function nav(b, n) {
         })
     }
 }
+
+sbBox.addEventListener("mousedown", () => {
+    pressed = 1
+})
+
+window.addEventListener("mouseup", () => {
+    pressed = 0
+})
+
+let totH = app.clientHeight - appBox.clientHeight
+
+scrollBar.addEventListener("input", () => {
+    let p = scrollBar.value
+
+    appBox.scrollTop = p*totH
+})
+
+appBox.addEventListener("scroll", () => {
+    let scroll = appBox.scrollTop
+    scrollBar.value = scroll/totH
+})
