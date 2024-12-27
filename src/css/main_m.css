@@ -3,4 +3,140 @@
     #scrollBar {
         display: none;
     }
+
+    #bar {
+        height: var(--mobileBarH);
+        overflow: hidden;
+        padding-top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #nav {
+        height: var(--mobileBarH);
+        aspect-ratio: 1;
+
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-around;
+
+        padding: 10px;
+        box-sizing: border-box;
+
+        transition: all .2s linear;
+        z-index: 3;
+
+        overflow: hidden;
+    }
+
+    #lang {
+        z-index: 3;
+    }
+    
+    .flagTxt {
+        height: var(--mobileBarH);
+        align-items: center;
+    }
+
+    .navBar {
+        width: 100%;
+        height: 10%;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: all .2s linear;
+    }
+    
+    #b1.checked {
+        transform: translateY(334%) rotate(45deg);
+        transform-origin: center;
+    }
+
+    #b2.checked {
+       transform: translateX(-200%);
+    }
+
+    #b3.checked {
+        transform: translateY(-334%) rotate(-45deg);
+        transform-origin: center;
+    }
+
+    #barMain {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+
+        top: 0px;
+        left: 0px;
+        grid-column: unset;
+        z-index: 2;
+
+        background: #000000cc;
+
+        transform: translateY(-100vh);
+        transition: .2s all ease-out;
+
+        padding: var(--mobileBarH) 0 15vh 0;
+        grid-template-rows: 2fr repeat(6, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    #barLogoBox {
+        grid-row: 1;
+        background: url(../../src/assets/svg/CLlungo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 2vh;
+    }
+
+    .barElm {
+        width: max-content;
+        height: max-content;
+        justify-self: center;
+        grid-template-columns: 40px max-content;
+        grid-template-rows: auto 5px;
+        column-gap: 8px;
+        row-gap: 5px;
+    }
+
+    .barTxt {
+        font-size: var(--mobileTs);
+        padding-bottom: 0;
+    }
+
+    .barSvg {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+
+    .barLine {
+        grid-column: 2 span;
+        width: 30px;
+    }
+
+    .barLine.checked {
+        width: 60px;
+    }
+
+    .barElm:hover > .barLine {
+        width: 60px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1219px) {
+    #barMain {
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1219px) and (max-height: 550px) {
+
+    #app {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #dimAlert {
+        display: flex;
+    }
 }

@@ -13,13 +13,19 @@ app.get("/", (req, res) => {
 })
 
 let dirs = [
+    "/pages/team.html",
+    "/pages/robot.html",
+    "/pages/project.html",
+    "/pages/sponsors.html",
+    "/pages/contacts.html",
     "/src/css/main.css",
-    "/src/css/bar.css",
-    "/src/css/pag1.css",
-    "/src/css/pag1_m.css",
-    "/src/css/pag2.css",
+    "/src/css/main_m.css",
+    "/src/css/index/pag1.css",
+    "/src/css/index/pag1_m.css",
+    "/src/css/index/pag2.css",
     "/src/js/script.js",
     "/src/js/data.js",
+    "/src/js/index.js",
     "/src/assets/font/POICarbonicTrial-Medium.otf",
     "/src/assets/img/pezzi.png",
     "/src/assets/img/bot.png",

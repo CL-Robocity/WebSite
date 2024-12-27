@@ -1,0 +1,40 @@
+/* Coded by F. Aiello CL-Robocity All Rigths Reserved */
+#pag2 {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background: #000;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh 1fr;
+
+    padding: 10vh 0;
+    box-sizing: border-box;
+}
+
+#main2 {
+    width: 100%;
+    height: 100%;
+}
+
+#img2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#title2 {
+    width: 100%;
+    height: 100%;
+    
+    color: #000;
+    background: #fff;
+    font-size: 10vh;
+    font-family: "carbon", serif;
+    font-style: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

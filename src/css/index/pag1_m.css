@@ -1,0 +1,23 @@
+/* Coded by F. Aiello CL-Robocity All Rigths Reserved */
+@media only screen and (max-width: 1219px) {
+
+    #pag1 {
+        background-size: cover;
+    }
+
+    #titleText {
+        width: 100vw;
+    }
+
+    #titleTop {
+        font-size: 10vw;
+    }
+
+    #titleMain {
+        font-size: 15vw;
+    }
+
+    #titleBottom {
+        font-size: 5vw;
+    }
+}

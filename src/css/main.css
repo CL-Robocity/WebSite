@@ -3,8 +3,9 @@ html {
     --pageW: 1100px;
     --barW: .65;
     --pageTs: 18px;
+    --barH: 80px;
 
-    --mobileBarH: 8vh;
+    --mobileBarH: 60px;
     --mobileTs: 30px;
 
     --col1: #3dc1dc;
@@ -45,7 +46,7 @@ body::-webkit-scrollbar {
 
 #sbBox {
     position: absolute;
-    width: 10px;
+    width: 5px;
     height: 100%;
     right: 5px;
 
@@ -56,14 +57,15 @@ body::-webkit-scrollbar {
     padding: 50px 0;
     box-sizing: border-box;
     
-    opacity: 5%;
+    opacity: 10%;
     overflow: hidden;
     z-index: 3;
-    transition: .2s ease-in all;
+    transition: .1s ease-in all;
 }
 
 #sbBox:hover {
-    opacity: 100%;
+    opacity: 60%;
+    width: 8px;
 }
 
 #scrollBar {
@@ -74,7 +76,7 @@ body::-webkit-scrollbar {
     writing-mode: vertical-lr;
 
     background: #00000000;
-    border-radius: 10px;
+    border-radius: 100px;
 
     transition: .2s ease-in all;
 
@@ -86,10 +88,16 @@ body::-webkit-scrollbar {
 
 #scrollBar::-webkit-slider-thumb {
     appearance: none;
-    width: 10px;
+    width: 5px;
     height: 10vh;
     border-radius: 10px;
     background: #fff;
+
+    transition: .2s ease-in all;
+}
+
+#scrollBar:hover::-webkit-slider-thumb {
+    width: 8px;
 }
 
 #appBox {
@@ -109,6 +117,149 @@ body::-webkit-scrollbar {
     width: 100vw;
     height: max-content;
     min-height: 100%;
+}
+
+#bar {
+    width: 100%;
+    height: var(--barH);
+
+    display: grid;
+    grid-template-columns: 1fr var(--pageW) 1fr;
+    grid-template-rows: 1fr;
+
+    grid-column: 2;
+
+    padding-top: 20px;
+}
+
+#barMain {
+    width: calc(var(--pageW) * var(--barW));
+    height: 100%;
+
+    justify-self: center;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(7, 1fr);
+
+    grid-column: 2;
+}
+
+#barLogoBox {
+    background: url(../../src/assets/svg/CLquadrato.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.barElm {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 4px;
+
+    align-self: center;
+}
+
+.barSvg {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+
+    opacity: 0%;
+    overflow: hidden;
+    transform: translateY(30px);
+
+    transition: .2s ease-in all;
+}
+
+.barSvg.checked {
+    opacity: 100%;
+    transform: unset;
+}
+
+.barTxt {
+    color: #fff;
+    font-family: "carbon";
+    font-size: var(--pageTs);
+
+    padding-top: 5px;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: all .2s ease-in;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.barTxt.checked {
+    transform: scale(1.1);
+}
+
+.barLine {
+    width: 5%;
+    height: 100%;
+
+    justify-self: center;
+    border-radius: 2px;
+
+    transition: all .2s ease-in;
+
+    background: #fff;
+}
+
+.barLine.checked {
+    width: 40%;
+}
+
+.barElm:hover > .barLine {
+    width: 40%;
+}
+
+.barElm:hover > .barTxt {
+    transform: scale(1.1);
+}
+
+.barElm:hover > .barSvg {
+    opacity: 100%;
+    transform: translateY(0);
+}
+
+#lang {
+    height: 100%;
+    aspect-ratio: 1;
+    justify-self: center;
+
+    padding: 0 0 6px 0;
+    box-sizing: border-box;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#langBox {
+    width: 100%;
+    height: max-content;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 54px 54px;
+
+    transition: .2s ease-in-out all;
+}
+
+.flagTxt {
+    color: #fff;
+    font-size: 20px;
+    font-family: "carbon", serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 div {
