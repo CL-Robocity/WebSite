@@ -8,7 +8,7 @@ const appBox = document.getElementById("appBox")
 const app = document.getElementById("app")
 const scrollBar = document.getElementById("scrollBar")
 
-let mobileB = window.innerWidth < 1219, navB = 0, baseURL = "http://localhost:5173/"
+let mobileB = window.innerWidth < 1219, navB = 0, baseURL = "https://clrobocity.onrender.com/"//"http://localhost:5173/"
 
 if (!window.location.href.indexOf("?l=") == -1) {
     params.set("l", "en")
